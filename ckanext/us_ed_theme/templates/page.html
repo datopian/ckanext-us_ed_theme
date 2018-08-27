@@ -1,0 +1,53 @@
+{% ckan_extends %}
+
+{%- block content %}
+    {% block toolbar %}
+      <div class="toolbar">
+        <div class="container">
+        {% block breadcrumb %}
+          {% if self.breadcrumb_content() | trim %}
+            <ol class="breadcrumb">
+              {% snippet 'snippets/home_breadcrumb_item.html' %}
+              {% block breadcrumb_content %}{% endblock %}
+            </ol>
+          {% endif %}
+        {% endblock %}
+        </div>
+      </div>
+    {% endblock %}
+
+    {% block maintag %}<div role="main">{% endblock %}
+      <div id="content" class="container">
+        {% block main_content %}
+          {% block flash %}
+            <div class="flash-messages">
+              {% block flash_inner %}
+                {% for message in h.flash.pop_messages() | list %}
+                  <div class="alert alert-warning fade in {{ message.category }}">
+                    {{ h.literal(message) }}
+                  </div>
+                {% endfor %}
+              {% endblock %}
+            </div>
+          {% endblock %}
+
+          <div class="row wrapper{% block wrapper_class %}{% endblock %}{% if self.secondary()|trim == '' or c.action=='resource_read' %} no-nav{% endif %}">
+            {% block pre_primary %}
+            {% endblock %}
+
+            {% block secondary %}
+              {{ super() }}
+            {% endblock %}
+
+            {% block primary %}
+              <div class="primary col-sm-9 col-xs-12">
+                {% block primary_content %}
+                  {{ super() }}
+                {% endblock %}
+              </div>
+            {% endblock %}
+          </div>
+        {% endblock %}
+      </div>
+    </div>
+  {% endblock -%}

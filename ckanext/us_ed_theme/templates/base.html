@@ -1,0 +1,10 @@
+{% ckan_extends %}
+
+{% block links %}
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+{% endblock %}
+
+{% block styles %}
+  {{ super() }}
+  {% resource 'us_ed_theme/css/custom.css' %}
+{% endblock %}

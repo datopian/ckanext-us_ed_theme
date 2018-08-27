@@ -1,0 +1,48 @@
+<div role="main" class="hero">
+    <div class="container">
+      <div class="row row1">
+        <div class="col-md-6 col2">
+          {% block stats %}
+            {% snippet 'home/snippets/stats.html' %}
+          {% endblock %}
+          {% block search %}
+            {% snippet 'home/snippets/search.html' %}
+          {% endblock %}
+        </div>
+        <div class="col-md-6 col1">
+            {% block promoted %}
+              {% snippet 'home/snippets/promoted.html' %}
+            {% endblock %}
+          </div>
+      </div>
+    </div>
+  </div>
+  <div role="main">
+    <div class="container">
+      {% set groups = h.us_ed_get_groups() %}
+      {% if groups %}
+      <div class="module module-topics">
+          <h2 class="title">{{ _('Categories') }}</h2>
+          <ul class="module-topics-list">
+            {% for group in groups %}
+              {% set group_url = h.url_for(controller='group', action='read', id=group.name) %}
+
+              {% if group.image_display_url %}
+                {% set group_image = group.image_display_url %}
+              {% else %}
+                {% set group_image = '/base/images/placeholder-group.png' %}
+              {% endif %}
+
+              <li>
+                <a href="{{ group_url }}" class="topic">
+                  <img class="topic-icon" src="{{ group_image }}" alt="{{ group.title }}">
+                  <span class="topic-title">{{ group.title }}</span>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+      </div>
+    </div>
+  </div>
