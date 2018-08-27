@@ -1,0 +1,272 @@
+/* Importa LESS assets */
+
+@import "variables.less";
+/* Override default styling */
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: @white;
+}
+
+a {
+  color: @secondary;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+}
+
+.btn-primary {
+  border-color: @primary;
+  background-color: @primary;
+  &:hover {
+    background-color: @secondary;
+  }
+}
+
+.form-control:focus {
+  border-color: @primary;
+  box-shadow: inset 0 0 0 1px @primary;
+}
+
+.account-masthead {
+  .account {
+    margin-top: 1rem;
+    ul {
+      li {
+        border-left: 0;
+        a {
+          color: @dark-gray;
+          font-weight: normal;
+          &:hover {
+            background-color: @primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.account-masthead,
+.masthead {
+  background: @white;
+}
+
+.masthead {
+  .logo {
+    img {
+      max-height: 45px;
+    }
+  }
+}
+
+.masthead .nav>li>a,
+.masthead .nav>li>a:focus,
+.masthead .nav>li>a:hover,
+.masthead .nav>.active>a,
+.masthead .nav>.active>a:hover,
+.masthead .nav>.active>a:focus {
+  color: @primary;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead .navigation .nav-pills li {
+  a {
+    &:hover,
+    &:hover {
+      color: @secondary;
+      background: transparent;
+    }
+  }
+  &.active {
+    a {
+      color: @secondary;
+      background: transparent;
+    }
+  }
+}
+
+.logo {
+  margin: .5rem auto;
+}
+
+.toolbar {
+  padding: 10px 0;
+  background: @light-gray;
+  .breadcrumb {
+    font-size: 14px;
+    font-weight: 700;
+    .active {
+      a {
+        font-style: oblique;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.wrapper {
+  &:before {
+    border-right: none;
+  }
+}
+
+.wrapper,
+.box {
+  box-shadow: none;
+  border: transparent;
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: @white;
+  min-height: 350px;
+  .box {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+[role=main] {
+  background: @white;
+  min-height: auto;
+  &.hero {
+    background: @primary;
+  }
+}
+
+.homepage {
+  .stats {
+    .inner {
+      padding: 0;
+    }
+    h3 {
+      display: none;
+    }
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+      font-size: 2rem;
+      li {
+        width: auto;
+        a {
+          display: flex;
+          flex-direction: column;
+          color: @white;
+          margin: 1rem 2rem;
+          border-bottom: 2px solid @accent;
+          &:hover {
+            border-bottom-color: @white;
+          }
+        }
+        strong {
+          font-size: 5rem;
+          line-height: 1;
+        }
+      }
+    }
+  }
+  &.layout-1 {
+    .row1 {
+      .col2 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        position: relative;
+        background-color: @secondary;
+      }
+    }
+  }
+  .featured {
+    display: none;
+  }
+  .module-search {
+    .module-content {
+      background-color: transparent;
+    }
+    .tags {
+      padding-top: 0;
+      background: transparent;
+    }
+    .search-giant {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.nav-item.active>a,
+.nav-aside li.active a {
+  background-color: @accent;
+  &::before {
+    border-left-color: @accent;
+  }
+}
+
+.nav-item.active>a:hover,
+.nav-aside li.active a:hover {
+  background-color: lighten(@accent, 5%);
+  &::before {
+    border-left-color: lighten(@accent, 5%);
+  }
+}
+
+.pill {
+  background-color: @accent;
+}
+
+a.tag {
+  background-color: @accent;
+  border: transparent;
+  box-shadow: none;
+  color: @white;
+  &:hover {
+    background-color: lighten(@accent, 5%);
+    border: transparent;
+    box-shadow: none;
+  }
+}
+
+.site-footer {
+  background: @light-gray;
+  &,
+  a,
+  small,
+  label {
+    color: @secondary;
+  }
+}
+
+.module-topics {
+  .title {
+    color: @primary;
+    font-size: 3rem;
+  }
+}
+
+.module-topics-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 15px 0 30px;
+  list-style: none;
+  li {
+    flex-basis: 10%;
+  }
+  .topic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 1rem;
+  }
+  .topic-icon{
+    max-height: 80px;
+  }
+}
