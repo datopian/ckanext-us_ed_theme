@@ -6,7 +6,7 @@ var autoprefixer = require('gulp-autoprefixer');
 
 // Rebuild CSS from LESS
 gulp.task('less', function () {
-  return gulp.src('less/main.less')
+  return gulp.src('less/custom.less')
   // .pipe(sourcemaps.init()) - Uncomment when developing
   .pipe(less())
   .pipe(cleanCSS({

@@ -23,7 +23,6 @@
     "npm": "^6.0.1"
   },
   "devDependencies": {
-    "bootstrap": "^3.3.7",
     "less": "^3.8.1"
   },
   "homepage": "https://github.com/ViderumGlobal/ckanext-us_ed_theme#readme"
