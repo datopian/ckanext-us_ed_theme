@@ -199,6 +199,7 @@ msgstr "Search categories..."
 msgid "There are currently no groups for this site"
 msgstr "There are currently no categories for this site"
 
+msgid ""
 " <p><strong>Admin:</strong> Can edit category information, as well as manage "
 "organization members.</p> <p><strong>Member:</strong> Can add/remove "
 "datasets from categories</p> "
