@@ -1,0 +1,289 @@
+# English translations for ckanext-us_ed_theme.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the ckanext-us_ed_theme
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-us_ed_theme 0.0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-08-30 19:26+0200\n"
+"PO-Revision-Date: 2018-08-30 19:26+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ckanext/us_ed_theme/templates/header.html:5
+msgid "Datasets"
+msgstr ""
+
+#: ckanext/us_ed_theme/templates/header.html:6
+msgid "Organizations"
+msgstr ""
+
+#: ckanext/us_ed_theme/templates/header.html:7
+msgid "Groups"
+msgstr "Categories"
+
+#: ckanext/us_ed_theme/templates/header.html:8
+msgid "Applications"
+msgstr ""
+
+#: ckanext/us_ed_theme/templates/header.html:9
+msgid "About"
+msgstr ""
+
+#: ckanext/us_ed_theme/templates/home/layout1.html:24
+msgid "Recent datasets"
+msgstr ""
+
+#: ckanext/us_ed_theme/templates/home/layout1.html:32
+msgid "No datasets available."
+msgstr ""
+
+#: ckanext/us_ed_theme/templates/home/layout1.html:42
+msgid "Categories"
+msgstr ""
+
+#: ckanext/us_ed_theme/templates/home/snippets/stats.html:5
+msgid "{site_title} statistics"
+msgstr ""
+
+#: ckanext/us_ed_theme/templates/home/snippets/stats.html:10
+msgid "dataset"
+msgid_plural "datasets"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/us_ed_theme/templates/home/snippets/stats.html:16
+msgid "organization"
+msgid_plural "organizations"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/us_ed_theme/templates/home/snippets/stats.html:22
+msgid "group"
+msgid_plural "groups"
+msgstr[0] "category"
+msgstr[1] "categories"
+
+#: ckanext/us_ed_theme/templates/home/snippets/stats.html:28
+msgid "application"
+msgid_plural "applications"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "This group has no description"
+msgstr "This category has no description"
+
+msgid "Largest Groups"
+msgstr "Largest Categories"
+
+msgid "Group"
+msgstr "Category"
+
+msgid "No groups"
+msgstr "No categories"
+
+msgid "Group not found"
+msgstr "Category not found"
+
+msgid "Incorrect group type"
+msgstr "Incorrect category type"
+
+msgid "Groups"
+msgstr "Categories"
+
+msgid "Unauthorized to create a group"
+msgstr "Unauthorized to create a category"
+
+msgid "Unauthorized to delete group %s"
+msgstr "Unauthorized to delete category %s"
+
+msgid "Group has been deleted."
+msgstr "Category has been deleted."
+
+msgid "Unauthorized to create group %s members"
+msgstr "Unauthorized to create category %s members"
+
+msgid "Unauthorized to add member to group %s"
+msgstr "Unauthorized to add member to category %s"
+
+msgid "Unauthorized to delete group %s members"
+msgstr "Unauthorized to delete category %s members"
+
+msgid "Group member has been deleted."
+msgstr "Category member has been deleted."
+
+msgid "CKAN Group Revision History"
+msgstr "CKAN Category Revision History"
+
+msgid "Recent changes to CKAN Group: "
+msgstr "Recent changes to CKAN Category: "
+
+msgid "{actor} updated the group {group}"
+msgstr "{actor} updated the category {group}"
+
+msgid "{actor} deleted the group {group}"
+msgstr "{actor} deleted the category {group}"
+
+msgid "{actor} created the group {group}"
+msgstr "{actor} created the category {group}"
+
+msgid "group"
+msgstr "category"
+
+msgid "That group name or ID does not exist."
+msgstr "That category name or ID does not exist."
+
+msgid "Group name already exists in database"
+msgstr "Category name already exists in database"
+
+msgid "Trying to create an organization as a group"
+msgstr "Trying to create an organization as a category"
+
+msgid "You must be logged in to follow a group."
+msgstr "You must be logged in to follow a category."
+
+msgid "User %s not authorized to edit these groups"
+msgstr "User %s not authorized to edit these categories"
+
+msgid "User %s not authorized to create groups"
+msgstr "User %s not authorized to create categories"
+
+msgid "Group was not found."
+msgstr "Category was not found."
+
+msgid "User %s not authorized to edit group %s"
+msgstr "User %s not authorized to edit category %s"
+
+msgid "User %s not authorized to delete groups"
+msgstr "User %s not authorized to delete categories"
+
+msgid "User %s not authorized to delete group %s"
+msgstr "User %s not authorized to delete category %s"
+
+msgid "User %s not authorized to read group %s"
+msgstr "User %s not authorized to read category %s"
+
+msgid "User %s not authorized to change state of group %s"
+msgstr "User %s not authorized to change state of category %s"
+
+msgid "User %s not authorized to edit permissions of group %s"
+msgstr "User %s not authorised to edit permissions of category %s"
+
+msgid "Add a Group"
+msgstr "Add a Category"
+
+msgid "Group Form"
+msgstr "Category Form"
+
+msgid "Are you sure you want to delete group - {name}?"
+msgstr "Are you sure you want to delete category - {name}?"
+
+msgid "Edit Group"
+msgstr "Edit Category"
+
+msgid "Add Group"
+msgstr "Add Category"
+
+msgid "Search groups..."
+msgstr "Search categories..."
+
+msgid "There are currently no groups for this site"
+msgstr "There are currently no categories for this site"
+
+" <p><strong>Admin:</strong> Can edit category information, as well as manage "
+"organization members.</p> <p><strong>Member:</strong> Can add/remove "
+"datasets from categories</p> "
+msgstr ""
+" <p><strong>Admin:</strong> Can edit category information, as well as manage "
+"organisation members.</p> <p><strong>Member:</strong> Can add/remove "
+"datasets from categories</p> "
+
+msgid "Create a Group"
+msgstr "Create a Category"
+
+msgid "Update Group"
+msgstr "Update Category"
+
+msgid "Create Group"
+msgstr "Create Category"
+
+msgid "Datasets in group: {group}"
+msgstr "Datasets in category: {group}"
+
+msgid "My Group"
+msgstr "My Category"
+
+msgid "my-group"
+msgstr "my-category"
+
+msgid "A little information about my group..."
+msgstr "A little information about my category..."
+
+msgid "Are you sure you want to delete this Group?"
+msgstr "Are you sure you want to delete this Category?"
+
+msgid "Save Group"
+msgstr "Save Category"
+
+msgid "Remove dataset from this group"
+msgstr "Remove dataset from this category"
+
+msgid "What are Groups?"
+msgstr "What are Categories?"
+
+msgid ""
+" You can use CKAN Groups to create and manage collections of datasets. This "
+"could be to catalogue datasets for a particular project or team, or on a "
+"particular theme, or as a very simple way to help people find and search "
+"your own published datasets. "
+msgstr ""
+" You can use CKAN Categories to create and manage collections of datasets. This "
+"could be to catalogue datasets for a particular project or team, or on a "
+"particular theme, or as a very simple way to help people find and search "
+"your own published datasets. "
+
+msgid "groups"
+msgstr "categories"
+
+msgid "Associate this group with this dataset"
+msgstr "Associate this category with this dataset"
+
+msgid "Add to group"
+msgstr "Add to category"
+
+msgid "There are no groups associated with this dataset"
+msgstr "There are no categories associated with this dataset"
+
+msgid "{number} group found for \"{query}\""
+msgid_plural "{number} groups found for \"{query}\""
+msgstr[0] "{number} category found for \"{query}\""
+msgstr[1] "{number} categories found for \"{query}\""
+
+msgid "No groups found for \"{query}\""
+msgstr "No categories found for \"{query}\""
+
+msgid "{number} group found"
+msgid_plural "{number} groups found"
+msgstr[0] "{number} category found"
+msgstr[1] "{number} categories found"
+
+msgid "No groups found"
+msgstr "No categories found"
+
+msgid "My Groups"
+msgstr "My Categories"
+
+msgid "You are not a member of any groups."
+msgstr "You are not a member of any categories."
+
+msgid "Create datasets, groups and other exciting things"
+msgstr "Create datasets, categories and other exciting things"

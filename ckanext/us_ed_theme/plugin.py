@@ -1,11 +1,13 @@
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 from ckanext.us_ed_theme import helpers
+from ckan.lib.plugins import DefaultTranslation
 
 
-class Us_Ed_ThemePlugin(plugins.SingletonPlugin):
+class Us_Ed_ThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.ITemplateHelpers)
+    plugins.implements(plugins.ITranslation)
 
     # ITemplateHelpers
 
