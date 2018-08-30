@@ -93,6 +93,16 @@ h4 {
   }
 }
 
+.navbar-toggle {
+  background-color: @primary;
+  border-radius: 0px;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: @secondary;
+  }
+}
+
 .logo {
   margin: 0.5rem auto;
 }
@@ -112,6 +122,10 @@ h4 {
       }
     }
   }
+}
+
+.fa-home:before {
+  color: @dark-gray;
 }
 
 .wrapper {
@@ -255,6 +269,7 @@ a.tag {
   .title {
     color: @primary;
     font-size: 3rem;
+    margin: 20px 20px;
   }
 }
 
