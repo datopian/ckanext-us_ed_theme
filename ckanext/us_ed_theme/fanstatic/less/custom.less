@@ -4,7 +4,7 @@
 /* Override default styling */
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   background: @white;
 }
 
@@ -17,6 +17,7 @@ h2,
 h3,
 h4 {
   line-height: 1.25;
+  letter-spacing: 0.1rem;
 }
 
 .btn-primary {
@@ -63,21 +64,23 @@ h4 {
   }
 }
 
-.masthead .nav>li>a,
-.masthead .nav>li>a:focus,
-.masthead .nav>li>a:hover,
-.masthead .nav>.active>a,
-.masthead .nav>.active>a:hover,
-.masthead .nav>.active>a:focus {
+.masthead .nav > li > a,
+.masthead .nav > li > a:focus,
+.masthead .nav > li > a:hover,
+.masthead .nav > .active > a,
+.masthead .nav > .active > a:hover,
+.masthead .nav > .active > a:focus {
   color: @primary;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.07rem;
 }
 
 .masthead .navigation .nav-pills li {
   a {
     &:hover,
-    &:hover {
+    &:active,
+    &:focus {
       color: @secondary;
       background: transparent;
     }
@@ -91,12 +94,12 @@ h4 {
 }
 
 .logo {
-  margin: .5rem auto;
+  margin: 0.5rem auto;
 }
 
 .toolbar {
   padding: 10px 0;
-  background: @light-gray;
+  background: @pale-gray;
   .breadcrumb {
     font-size: 14px;
     font-weight: 700;
@@ -134,11 +137,13 @@ h4 {
   }
 }
 
-[role=main] {
+[role="main"] {
   background: @white;
   min-height: auto;
   &.hero {
-    background: @primary;
+    //background: @primary;
+    background: url(/base/images/hero-img-bg.png) top right no-repeat,
+      linear-gradient(135deg, #6ec3a6 0%, #0052a2 60%);
   }
 }
 
@@ -154,7 +159,9 @@ h4 {
       display: flex;
       justify-content: flex-start;
       align-content: center;
+      flex-wrap: wrap;
       font-size: 2rem;
+      margin-bottom: 1rem;
       li {
         width: auto;
         a {
@@ -162,7 +169,7 @@ h4 {
           flex-direction: column;
           color: @white;
           margin: 1rem 2rem;
-          border-bottom: 2px solid @accent;
+          border-bottom: 2px solid transparent;
           &:hover {
             border-bottom-color: @white;
           }
@@ -177,10 +184,10 @@ h4 {
   &.layout-1 {
     .row1 {
       .col2 {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding: 2rem;
         position: relative;
-        background-color: @secondary;
+        background-color: rgba(255, 255, 255, 0.2);
+        //background-color: @secondary;
       }
     }
   }
@@ -201,7 +208,7 @@ h4 {
   }
 }
 
-.nav-item.active>a,
+.nav-item.active > a,
 .nav-aside li.active a {
   background-color: @accent;
   &::before {
@@ -209,7 +216,7 @@ h4 {
   }
 }
 
-.nav-item.active>a:hover,
+.nav-item.active > a:hover,
 .nav-aside li.active a:hover {
   background-color: lighten(@accent, 5%);
   &::before {
@@ -260,13 +267,13 @@ a.tag {
   li {
     flex-basis: 10%;
   }
-  .topic{
+  .topic {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto 1rem;
   }
-  .topic-icon{
+  .topic-icon {
     max-height: 80px;
   }
 }
