@@ -93,6 +93,16 @@ h4 {
   }
 }
 
+.navbar-toggle {
+  background-color: @primary;
+  border-radius: 0px;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: @secondary;
+  }
+}
+
 .logo {
   margin: 0.5rem auto;
 }
@@ -112,6 +122,10 @@ h4 {
       }
     }
   }
+}
+
+.fa-home:before {
+  color: @dark-gray;
 }
 
 .wrapper {
@@ -143,7 +157,6 @@ h4 {
   background: @white;
   min-height: auto;
   &.hero {
-    //background: @primary;
     background: url(/base/images/hero-img-bg.png) top right no-repeat,
       linear-gradient(135deg, #6ec3a6 0%, #0052a2 60%);
   }
@@ -188,8 +201,7 @@ h4 {
       .col2 {
         padding: 2rem;
         position: relative;
-        background-color: rgba(255, 255, 255, 0.2);
-        //background-color: @secondary;
+        background-color: @white-opacity;
       }
     }
   }
@@ -204,8 +216,9 @@ h4 {
       padding-top: 0;
       background: transparent;
     }
-    .search-giant {
+    .search-giant input {
       margin-bottom: 0;
+      border-color: transparent;
     }
   }
 }
@@ -256,6 +269,7 @@ a.tag {
   .title {
     color: @primary;
     font-size: 3rem;
+    margin: 20px 20px;
   }
 }
 
@@ -273,9 +287,11 @@ a.tag {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto 1rem;
+    margin: auto 2rem;
+    text-align: center;
   }
   .topic-icon {
     max-height: 80px;
+    margin: 10px;
   }
 }
