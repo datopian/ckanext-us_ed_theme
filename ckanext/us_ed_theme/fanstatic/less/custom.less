@@ -59,7 +59,7 @@ h4 {
 .masthead {
   .logo {
     img {
-      max-height: 45px;
+      max-height: 70px;
     }
   }
 }
@@ -103,10 +103,12 @@ h4 {
   .breadcrumb {
     font-size: 14px;
     font-weight: 700;
+    color: @dark-gray;
     .active {
       a {
         font-style: oblique;
         font-weight: 400;
+        color: @dark-gray;
       }
     }
   }
@@ -225,16 +227,16 @@ h4 {
 }
 
 .pill {
-  background-color: @accent;
+  background-color: @secondary;
 }
 
 a.tag {
-  background-color: @accent;
+  background-color: @secondary;
   border: transparent;
   box-shadow: none;
   color: @white;
   &:hover {
-    background-color: lighten(@accent, 5%);
+    background-color: lighten(@secondary, 5%);
     border: transparent;
     box-shadow: none;
   }
