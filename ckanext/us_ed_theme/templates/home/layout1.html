@@ -16,33 +16,50 @@
           </div>
       </div>
     </div>
-  </div>
-  <div role="main">
-    <div class="container">
-      {% set groups = h.us_ed_get_groups() %}
-      {% if groups %}
-      <div class="module module-topics">
-          <h2 class="title">{{ _('Categories') }}</h2>
-          <ul class="module-topics-list">
-            {% for group in groups %}
-              {% set group_url = h.url_for(controller='group', action='read', id=group.name) %}
-
-              {% if group.image_display_url %}
-                {% set group_image = group.image_display_url %}
-              {% else %}
-                {% set group_image = '/base/images/placeholder-group.png' %}
-              {% endif %}
-
-              <li>
-                <a href="{{ group_url }}" class="topic">
-                  <img class="topic-icon" src="{{ group_image }}" alt="{{ group.title }}">
-                  <span class="topic-title">{{ group.title }}</span>
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
+</div>
+<div role="main">
+  <div class="container">
+    {% set recent_datasets = h.us_ed_get_recently_updated_datasets() %}
+    <div class="col-md-6">
+      <h4 class="title"><i class="fa fa-clock-o"></i> {{_('Recent datasets')}}</h4>
+      {% if recent_datasets %}
+      <ul class="list-unstyled">
+        {% for dataset in recent_datasets %}
+          <li><i class="fa fa-database"></i> <a href="{{ h.url_for(controller='package', action='read', id=dataset.name) }}">{{ dataset.title }}</a></li>
+        {% endfor %}
+      </ul>
+      {% else %}
+        <p>{{ _('No datasets available.') }}</p>
       {% endif %}
-      </div>
     </div>
   </div>
+</div>
+<div role="main">
+  <div class="container">
+    {% set groups = h.us_ed_get_groups() %}
+    {% if groups %}
+    <div class="module module-topics">
+        <h2 class="title">{{ _('Categories') }}</h2>
+        <ul class="module-topics-list">
+          {% for group in groups %}
+            {% set group_url = h.url_for(controller='group', action='read', id=group.name) %}
+
+            {% if group.image_display_url %}
+              {% set group_image = group.image_display_url %}
+            {% else %}
+              {% set group_image = '/base/images/placeholder-group.png' %}
+            {% endif %}
+
+            <li>
+              <a href="{{ group_url }}" class="topic">
+                <img class="topic-icon" src="{{ group_image }}" alt="{{ group.title }}">
+                <span class="topic-title">{{ group.title }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+    </div>
+</div>
+

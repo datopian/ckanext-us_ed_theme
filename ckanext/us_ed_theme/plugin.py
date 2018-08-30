@@ -2,6 +2,7 @@ import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 from ckanext.us_ed_theme import helpers
 
+
 class Us_Ed_ThemePlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.ITemplateHelpers)
@@ -11,6 +12,8 @@ class Us_Ed_ThemePlugin(plugins.SingletonPlugin):
     def get_helpers(self):
         return {
             'us_ed_get_groups': helpers.get_groups,
+            'us_ed_get_recently_updated_datasets':
+                helpers.get_recently_updated_datasets,
         }
 
     # IConfigurer
