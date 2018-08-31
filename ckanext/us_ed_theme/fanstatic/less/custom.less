@@ -183,7 +183,7 @@ h4 {
           display: flex;
           flex-direction: column;
           color: @white;
-          margin: 1rem 2rem;
+          margin: auto 1.5rem;
           border-bottom: 2px solid transparent;
           &:hover {
             border-bottom-color: @white;
@@ -256,12 +256,13 @@ a.tag {
 }
 
 .site-footer {
-  background: @light-gray;
+  background: @secondary;
+  border-top: 5px solid @accent;
   &,
   a,
   small,
   label {
-    color: @secondary;
+    color: @white;
   }
 }
 
@@ -293,5 +294,25 @@ a.tag {
   .topic-icon {
     max-height: 80px;
     margin: 10px;
+  }
+}
+
+.module-datasets {
+  margin-bottom: 8rem;
+  .title {
+    background-color: @pale-gray;
+    padding: 1.3rem;
+    border-left: 7px solid @accent;
+  }
+}
+.module-datasets {
+  li {
+    margin: 1.5rem 0rem 0rem 2rem;
+    border-bottom: 1px solid @light-gray;
+    padding-bottom: 15px;
+    i {
+      padding-right: 1rem;
+      color: @accent;
+    }
   }
 }
