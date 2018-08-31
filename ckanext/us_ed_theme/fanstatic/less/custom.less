@@ -271,7 +271,8 @@ a.tag {
   .title {
     color: @primary;
     font-size: 3rem;
-    margin: 20px 20px;
+    margin-top: 4rem;
+    text-align: center;
   }
 }
 
@@ -279,7 +280,7 @@ a.tag {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0;
+  margin-bottom: 2rem;
   padding: 15px 0 30px;
   list-style: none;
   li {
@@ -322,12 +323,12 @@ a.tag {
   display: flex;
 }
 
-.blog-bg {
+[role="main"].blog-bg {
   background-color: @pale-gray;
 }
 
 .blogs {
-  margin: @grid-gutter-width / 2 0;
+  margin: 30px 0;
 }
 .blogs-header {
   .flex;
@@ -358,11 +359,11 @@ a.tag {
   flex-direction: column;
   justify-content: flex-start;
   background-color: @white;
-  box-shadow: 0px 0px 50px -10px rgba(0,0,0,0.2);
+  box-shadow: 0px 15px 45px -10px rgba(0, 0, 0, 0.2);
   &:hover,
   &:active,
   &:focus {
-    box-shadow: 0px 0px 40px -4px rgba(0,0,0,0.4);
+    box-shadow: 0px 15px 45px -6px rgba(0, 0, 0, 0.3);
   }
   @media (max-width: @screen-default) {
     margin-top: (@grid-gutter-width - 10);
@@ -423,4 +424,7 @@ a.tag {
     min-width: inherit;
     max-width: inherit;
   }
+}
+.homepage [role="main"] {
+  padding: 0;
 }
