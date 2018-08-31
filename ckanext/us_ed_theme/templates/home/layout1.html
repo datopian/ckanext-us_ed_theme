@@ -38,8 +38,8 @@
   <div class="container">
     <div class="row">
       <div class="module-datasets col-lg-6 col-md-12 col-sm-12 col-xs-12">
-        {% set recent_datasets = h.us_ed_get_recently_updated_datasets() %}
-        <h3 class="title"><i class="fa fa-clock-o"></i> {{_('Recent datasets')}}</h4>
+        {% set recent_datasets = h.us_ed_get_recently_updated_datasets(limit=5) %}
+        <h3 class="title"><i class="fa fa-clock-o"></i> {{_('Recent Datasets')}}</h3>
           {% if recent_datasets %}
           <ul class="module-recent list-unstyled">
             {% for dataset in recent_datasets %}
@@ -51,13 +51,13 @@
           <p>{{ _('No datasets available.') }}</p>
           {% endif %}
       </div>
-      <div class="module-posts col-lg-6 col-md-12 col-sm-12 col-xs-12">
-        {% set recent_datasets = h.us_ed_get_recently_updated_datasets() %}
-        <h3 class="title"><i class="fa fa fa-newspaper-o"></i> {{_('Latest Blog Posts')}}</h4>
-          {% if recent_datasets %}
+      <div class="module-datasets col-lg-6 col-md-12 col-sm-12 col-xs-12">
+        {% set most_popular_datasets = h.us_ed_get_most_popular_datasets(limit=5) %}
+        <h3 class="title"><i class="fa fa-line-chart"></i> {{_('Most Popular Datasets')}}</h3>
+          {% if most_popular_datasets %}
           <ul class="module-recent list-unstyled">
-            {% for dataset in recent_datasets %}
-            <li><a href="{{ h.url_for(controller='package', action='read', id=dataset.name) }}">{{
+            {% for dataset in most_popular_datasets %}
+            <li><i class="fa fa-database"></i> <a href="{{ h.url_for(controller='package', action='read', id=dataset.name) }}">{{
                 dataset.title }}</a></li>
             {% endfor %}
           </ul>
@@ -68,3 +68,34 @@
     </div>
   </div>
 </div>
+
+{% set recent_blogs = h.get_recent_blog_posts(3) %}
+
+{% if recent_blogs %}
+<div role="main">
+    <div class="container">
+      <div class="blogs">
+        <div class="blogs-header">
+          <h3 class="blogs-header-title">{{ _('Recent Blog Posts') }}</h3>
+          {% set blog_url = h.url(controller='ckanext.pages.controller:PagesController', action='blog_index') %}
+          <a class="btn btn-small btn-blogs-archive" href="{{ blog_url }}">{{ _('Blog Аrchive') }}</a>
+        </div>
+        <div class="blogs-items-container">
+          {% for article in recent_blogs %}
+            {% set article_url = h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + article.name) %}
+            <a href="{{ article_url }}" class="blogs-item">
+              {% if article.image %}
+                <figure class="blogs-item-photo">
+                  <img src="{{ article.image }}">
+                </figure>
+              {% endif %}
+              <span class="blogs-item-title">{{ article.title or article.name }}</span>
+              <span class="blogs-item-description">{{ h.markdown_extract(article.content) }}</span>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+</div>
+{% endif %}

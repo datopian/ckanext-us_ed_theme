@@ -16,6 +16,8 @@ class Us_Ed_ThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
             'us_ed_get_groups': helpers.get_groups,
             'us_ed_get_recently_updated_datasets':
                 helpers.get_recently_updated_datasets,
+            'us_ed_get_most_popular_datasets':
+                helpers.get_most_popular_datasets
         }
 
     # IConfigurer

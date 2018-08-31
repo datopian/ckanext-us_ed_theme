@@ -46,3 +46,19 @@ def get_recently_updated_datasets(limit=5):
             package['days_ago_modified'] = ((datetime.now() - modified).days)
             pkgs.append(package)
         return pkgs
+
+
+def get_most_popular_datasets(limit=5):
+    '''
+     Returns most popular datasets based on total views.
+    :param limit: Limit of the datasets to be returned. Default is 5.
+    :type limit: integer
+    :returns: a list of most popular datasets
+    :rtype: list
+    '''
+    data = pkg_search_results = toolkit.get_action('package_search')(data_dict={
+            'sort': 'views_total desc',
+            'rows': limit,
+        })['results']
+
+    return data
