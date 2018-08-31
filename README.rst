@@ -2,31 +2,8 @@
    these badges work. The necessary Travis and Coverage config files have been
    generated for you.
 
-.. image:: https://travis-ci.org/viderumglobal/ckanext-us_ed_theme.svg?branch=master
-    :target: https://travis-ci.org/viderumglobal/ckanext-us_ed_theme
-
-.. image:: https://coveralls.io/repos/viderumglobal/ckanext-us_ed_theme/badge.svg
-  :target: https://coveralls.io/r/viderumglobal/ckanext-us_ed_theme
-
-.. image:: https://pypip.in/download/ckanext-us_ed_theme/badge.svg
-    :target: https://pypi.python.org/pypi//ckanext-us_ed_theme/
-    :alt: Downloads
-
-.. image:: https://pypip.in/version/ckanext-us_ed_theme/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-us_ed_theme/
-    :alt: Latest Version
-
-.. image:: https://pypip.in/py_versions/ckanext-us_ed_theme/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-us_ed_theme/
-    :alt: Supported Python versions
-
-.. image:: https://pypip.in/status/ckanext-us_ed_theme/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-us_ed_theme/
-    :alt: Development Status
-
-.. image:: https://pypip.in/license/ckanext-us_ed_theme/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-us_ed_theme/
-    :alt: License
+.. image:: https://travis-ci.org/ViderumGlobal/ckanext-us_ed_theme.svg?branch=master
+    :target: https://travis-ci.org/ViderumGlobal/ckanext-us_ed_theme
 
 =============
 ckanext-us_ed_theme
