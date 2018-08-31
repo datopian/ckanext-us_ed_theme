@@ -72,13 +72,13 @@
 {% set recent_blogs = h.get_recent_blog_posts(3) %}
 
 {% if recent_blogs %}
-
+<div role="main" class="blog-bg">
     <div class="container">
       <div class="blogs">
         <div class="blogs-header">
           <h3 class="blogs-header-title">{{ _('Recent Blog Posts') }}</h3>
           {% set blog_url = h.url(controller='ckanext.pages.controller:PagesController', action='blog_index') %}
-          <a class="btn btn-small btn-blogs-archive" href="{{ blog_url }}">{{ _('Blog Аrchive') }}</a>
+          <a class="btn btn-small btn-primary" href="{{ blog_url }}">{{ _('Blog Аrchive') }}</a>
         </div>
         <div class="blogs-items-container">
           {% for article in recent_blogs %}
