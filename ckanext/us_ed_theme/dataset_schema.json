@@ -1,142 +1,73 @@
 {
   "scheming_version": 1,
   "dataset_type": "dataset",
-  "about": "A reimplementation of the default CKAN dataset schema",
-  "about_url": "http://github.com/ckan/ckanext-scheming",
+  "about": "Sample dataset schema for US Dept. of Education",
+  "about_url": "https://www.viderum.com/",
   "dataset_fields": [
     {
       "field_name": "title",
       "label": "Title",
       "preset": "title",
+      "required": true,
+      "validators": "scheming_required unicode",
       "form_placeholder": "eg. A descriptive title"
     },
     {
-      "field_name": "name",
-      "label": "URL",
-      "preset": "dataset_slug",
-      "form_placeholder": "eg. my-dataset"
-    },
-    {
-      "field_name": "notes",
+      "field_name": "description",
       "label": "Description",
+      "required": true,
       "form_snippet": "markdown.html",
-      "form_placeholder": "eg. Some useful notes about the data"
+      "form_placeholder": "eg. Some useful information about the data"
     },
     {
-      "field_name": "tag_string",
+      "field_name": "keyword",
       "label": "Tags",
       "preset": "tag_string_autocomplete",
-      "form_placeholder": "eg. economy, mental health, government"
+      "required": true,
+      "validators": "ignore_missing at_least_n_tags(3) tag_string_convert",
+      "form_placeholder": "eg. university, public school etc.",
+      "help_text": "Enter at least three keywords"
     },
     {
-      "field_name": "license_id",
-      "label": "License",
-      "form_snippet": "license.html",
-      "help_text": "License definitions and additional information can be found at http://opendefinition.org/"
+      "field_name": "modified",
+      "label": "Last Update",
+      "help_text": "Last updated date",
+      "form_snippet": "date.html",
+      "validators": "ignore_missing unicode isodate"
     },
     {
-      "field_name": "owner_org",
-      "label": "Organization",
-      "preset": "dataset_organization"
+      "field_name": "publisher",
+      "label": "Publisher"
     },
     {
-      "field_name": "url",
-      "label": "Source",
-      "form_placeholder": "http://example.com/dataset.json",
-      "display_property": "foaf:homepage",
-      "display_snippet": "link.html"
+      "field_name": "contactPoint",
+      "label": "Contact Name"
     },
     {
-      "field_name": "version",
-      "label": "Version",
-      "validators": "ignore_missing unicode package_version_validator",
-      "form_placeholder": "1.0"
+      "field_name": "mbox",
+      "label": "Contact Email"
     },
     {
-      "field_name": "author",
-      "label": "Author",
-      "form_placeholder": "Joe Bloggs",
-      "display_property": "dc:creator"
+      "field_name": "identifier",
+      "label": "Unique Identifier"
     },
     {
-      "field_name": "author_email",
-      "label": "Author Email",
-      "form_placeholder": "joe@example.com",
-      "display_property": "dc:creator",
-      "display_snippet": "email.html",
-      "display_email_name_field": "author"
-    },
-    {
-      "field_name": "maintainer",
-      "label": "Maintainer",
-      "form_placeholder": "Joe Bloggs",
-      "display_property": "dc:contributor"
-    },
-    {
-      "field_name": "maintainer_email",
-      "label": "Maintainer Email",
-      "form_placeholder": "joe@example.com",
-      "display_property": "dc:contributor",
-      "display_snippet": "email.html",
-      "display_email_name_field": "maintainer"
-    },
-    {
-      "field_name": "frequency",
-      "label": "Frequency of Update",
+      "field_name": "accessLevel",
+      "label": "Public Access Level",
       "preset": "select",
       "required": true,
       "choices": [
         {
-          "value": "daily",
-          "label": "Daily"
+          "value": "public",
+          "label": "Public"
         },
         {
-          "value": "weekly",
-          "label": "Weekly"
+          "value": "restricted-public",
+          "label": "Restricted public"
         },
         {
-          "value": "fortnightly",
-          "label": "Fortnightly"
-        },
-        {
-          "value": "monthly",
-          "label": "Monthly"
-        },
-        {
-          "value": "quarterly",
-          "label": "Quarterly"
-        },
-        {
-          "value": "annually",
-          "label": "Annually"
-        },
-        {
-          "value": "irregular",
-          "label": "Irregular"
-        },
-        {
-          "value": "notPlanned",
-          "label": "Not Planned"
-        }
-      ]
-    },
-    {
-      "field_name": "approval",
-      "label": "Stage of approval",
-      "preset": "select",
-      "required": true,
-      "choices": [
-        {
-          "value": "draft",
-          "label": "Draft"
-        },
-        {
-          "value": "review",
-          "label": "Review"
-        },
-        {
-          "value": "published",
-          "label": "Published"
+          "value": "non-public",
+          "label": "Non-public"
         }
       ]
     }
