@@ -89,3 +89,16 @@ def get_storage_path_for(dirname):
                 raise
 
     return target_path
+
+
+def get_total_views_for_dataset(id):
+    data_dict = {
+        'id': id,
+        'include_tracking': True
+    }
+
+    try:
+        dataset = _get_action('package_show', {}, data_dict)
+        return dataset.get('tracking_summary').get('total')
+    except Exception:
+        return 0

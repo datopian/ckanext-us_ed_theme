@@ -1,0 +1,9 @@
+{% ckan_extends %}
+
+{% block notes %}
+  {{ super() }}
+  <div class="dataset-total-views">
+    {% set total_views = h.us_ed_get_total_views_for_dataset(package.id) %}
+    <i class="fa fa-bar-chart-o"></i> {{ ungettext('{total_views} view', '{total_views} views', total_views).format(total_views=total_views) }}
+  </div>
+{% endblock %}

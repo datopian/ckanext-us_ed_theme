@@ -1,0 +1,17 @@
+{% ckan_extends %}
+
+{% block nums %}
+  {% set num_followers = h.follow_count('dataset', pkg.id) %}
+  <div class="nums">
+    <dl>
+      <dt>{{ _('Followers') }}</dt>
+      <dd data-module="followers-counter" data-module-id="{{ pkg.id }}" data-module-num_followers="{{ num_followers }}">{{ h.SI_number_span(num_followers) }}</dd>
+    </dl>
+    {% if pkg.tracking_summary %}
+      <dl>
+        <dt>{{ _('Views') }}</dt>
+        <dd>{{ h.SI_number_span(pkg.tracking_summary.total) }}</dd>
+      </dl>
+    {% endif %}
+  </div>
+{% endblock %}
