@@ -25,7 +25,7 @@ msgstr ""
 
 #: ckanext/us_ed_theme/templates/header.html:6
 msgid "Organizations"
-msgstr ""
+msgstr "Offices"
 
 #: ckanext/us_ed_theme/templates/header.html:7
 msgid "Groups"
@@ -64,8 +64,8 @@ msgstr[1] ""
 #: ckanext/us_ed_theme/templates/home/snippets/stats.html:16
 msgid "organization"
 msgid_plural "organizations"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "office"
+msgstr[1] "offices"
 
 #: ckanext/us_ed_theme/templates/home/snippets/stats.html:22
 msgid "group"
@@ -176,7 +176,7 @@ msgid "User %s not authorized to change state of group %s"
 msgstr "User %s not authorized to change state of category %s"
 
 msgid "User %s not authorized to edit permissions of group %s"
-msgstr "User %s not authorised to edit permissions of category %s"
+msgstr "User %s not authorized to edit permissions of category %s"
 
 msgid "Add a Group"
 msgstr "Add a Category"
@@ -288,3 +288,381 @@ msgstr "You are not a member of any categories."
 
 msgid "Create datasets, groups and other exciting things"
 msgstr "Create datasets, categories and other exciting things"
+
+msgid "Organization not found"
+msgstr "Office not found"
+
+msgid "Organizations"
+msgstr "Offices"
+
+msgid "Organization has been deleted."
+msgstr "Office has been deleted."
+
+msgid "{actor} updated the organization {organization}"
+msgstr "{actor} updated the office {organization}"
+
+msgid "{actor} deleted the organization {organization}"
+msgstr "{actor} deleted the office {organization}"
+
+msgid "{actor} created the organization {organization}"
+msgstr "{actor} created the office {organization}"
+
+msgid "organization"
+msgstr "office"
+
+msgid "An organization must be provided"
+msgstr "An office must be provided"
+
+msgid "Organization does not exist"
+msgstr "Office does not exist"
+
+msgid "You cannot add a dataset to this organization"
+msgstr "You cannot add a dataset to this office"
+
+msgid "Datasets with no organization can't be private."
+msgstr "Datasets with no office can't be private."
+
+msgid "Trying to create an organization as a group"
+msgstr "Trying to create an office as a group"
+
+msgid "Organization cannot be deleted while it still has datasets"
+msgstr "Office cannot be deleted while it still has datasets"
+
+msgid "Organization was not found."
+msgstr "Office was not found."
+
+msgid "User %s not authorized to add dataset to this organization"
+msgstr "User %s not authorized to add dataset to this office"
+
+msgid "User %s not authorized to create organizations"
+msgstr "User %s not authorized to create offices"
+
+msgid "User %s not authorized to delete organizations"
+msgstr "User %s not authorized to delete offices"
+
+msgid "User %s not authorized to delete organization %s"
+msgstr "User %s not authorized to delete office %s"
+
+msgid "User %s not authorized to edit organization %s"
+msgstr "User %s not authorized to edit office %s"
+
+msgid ""
+" <p><strong>Admin:</strong> Can edit group information, as well as manage "
+"organization members.</p> <p><strong>Member:</strong> Can add/remove "
+"datasets from groups</p> "
+msgstr ""
+" <p><strong>Admin:</strong> Can edit category information, as well as manage "
+"office members.</p> <p><strong>Member:</strong> Can add/remove "
+"datasets from categories</p> "
+
+msgid "organizations"
+msgstr "offices"
+
+msgid "Organization Form"
+msgstr "Office Form"
+
+msgid "This organization has no datasets associated to it"
+msgstr "This office has no datasets associated to it"
+
+msgid "Are you sure you want to delete organization - {name}?"
+msgstr "Are you sure you want to delete office - {name}?"
+
+msgid "Edit Organization"
+msgstr "Edit Office"
+
+msgid "Add Organization"
+msgstr "Add Office"
+
+msgid "Search organizations..."
+msgstr "Search offices..."
+
+msgid "There are currently no organizations for this site"
+msgstr "There are currently no offices for this site"
+
+msgid ""
+" <p><strong>Admin:</strong> Can add/edit and delete datasets, as well as "
+"manage organization members.</p> <p><strong>Editor:</strong> Can add and "
+"edit datasets, but not manage organization members.</p> "
+"<p><strong>Member:</strong> Can view the organization's private datasets, "
+"but not add new datasets.</p> "
+msgstr ""
+" <p><strong>Admin:</strong> Can add/edit and delete datasets, as well as "
+"manage office members.</p> <p><strong>Editor:</strong> Can add and "
+"edit datasets, but not manage office members.</p> "
+"<p><strong>Member:</strong> Can view the office's private datasets, "
+"but not add new datasets.</p> "
+
+msgid "Create an Organization"
+msgstr "Create an Office"
+
+msgid "Update Organization"
+msgstr "Update Office"
+
+msgid "Create Organization"
+msgstr "Create Office"
+
+msgid "Datasets in organization: {group}"
+msgstr "Datasets in office: {group}"
+
+msgid "What are Organizations?"
+msgstr "What are Offices?"
+
+msgid ""
+" <p>Organizations act like publishing departments for datasets (for example,"
+" the Department of Health). This means that datasets can be published by and"
+" belong to a department instead of an individual user.</p> <p>Within "
+"organizations, admins can assign roles and authorise its members, giving "
+"individual users the right to publish datasets from that particular "
+"organisation (e.g. Office of National Statistics).</p> "
+msgstr ""
+" <p>Offices act like publishing departments for datasets (for example,"
+" the Department of Health). This means that datasets can be published by and"
+" belong to a department instead of an individual user.</p> <p>Within "
+"offices, admins can assign roles and authorize its members, giving "
+"individual users the right to publish datasets from that particular "
+"office (e.g. Office of National Statistics).</p> "
+
+msgid ""
+" CKAN Organizations are used to create, manage and publish collections of "
+"datasets. Users can have different roles within an Organization, depending "
+"on their level of authorisation to create, edit and publish. "
+msgstr ""
+" CKAN Offices are used to create, manage and publish collections of "
+"datasets. Users can have different roles within an Office, depending "
+"on their level of authorization to create, edit and publish. "
+
+msgid "My Organization"
+msgstr "My Office"
+
+msgid "my-organization"
+msgstr "my-office"
+
+msgid "A little information about my organization..."
+msgstr "A little information about my office..."
+
+msgid ""
+"Are you sure you want to delete this Organization? Note*: Deleting cannot be"
+" performed while public or private datasets belong to this organization."
+msgstr ""
+"Are you sure you want to delete this Office? Note*: Deleting cannot be"
+" performed while public or private datasets belong to this office."
+
+msgid "Save Organization"
+msgstr "Save Office"
+
+msgid "Create a new organization"
+msgstr "Create a new office"
+
+msgid "There are no organizations to which you can assign this dataset."
+msgstr "There are no offices to which you can assign this dataset."
+
+msgid ""
+"Ask a system administrator to create an organization before you can "
+"continue."
+msgstr ""
+"Ask a system administrator to create an office before you can "
+"continue."
+
+msgid "Organization"
+msgstr "Office"
+
+msgid "No organization"
+msgstr "No office"
+
+msgid "There is no description for this organization"
+msgstr "There is no description for this office"
+
+msgid "{number} organization found for \"{query}\""
+msgid_plural "{number} organizations found for \"{query}\""
+msgstr[0] "{number} office found for \"{query}\""
+msgstr[1] "{number} offices found for \"{query}\""
+
+msgid "No organizations found for \"{query}\""
+msgstr "No offices found for \"{query}\""
+
+msgid "{number} organization found"
+msgid_plural "{number} organizations found"
+msgstr[0] "{number} office found"
+msgstr[1] "{number} offices found"
+
+msgid "No organizations found"
+msgstr "No offices found"
+
+msgid "My Organizations"
+msgstr "My Offices"
+
+msgid "You are not a member of any organizations."
+msgstr "You are not a member of any offices."
+
+msgid "Showcase not found"
+msgstr "Application not found"
+
+msgid "Unauthorized to read showcase"
+msgstr "Unauthorized to read application"
+
+msgid "Showcase has been deleted."
+msgstr "Application has been deleted."
+
+msgid "The dataset has been added to the showcase."
+msgid_plural "The datasets have been added to the showcase."
+msgstr[0] "The dataset has been added to the application."
+msgstr[1] "The datasets have been added to the application."
+
+msgid "The dataset has been removed from the showcase."
+msgid_plural "The datasets have been removed from the showcase."
+msgstr[0] "The dataset has been removed from the application."
+msgstr[1] "The datasets have been removed from the application."
+
+msgid "The user is now a Showcase Admin"
+msgstr "The user is now an Application Admin"
+
+msgid "The user is not a Showcase Admin"
+msgstr "The user is not an Application Admin"
+
+msgid "The user is no longer a Showcase Admin"
+msgstr "The user is no longer an Application Admin"
+
+msgid "Showcases"
+msgstr "Applications"
+
+msgid "Are you sure you want to remove this user as a Showcase Admin - {name}?"
+msgstr "Are you sure you want to remove this user as an Application Admin - {name}?"
+
+msgid "Manage Showcase Admins"
+msgstr "Manage Application Admins"
+
+msgid "To make an existing user a Showcase Admin, search for their username below."
+msgstr "To make an existing user an Application Admin, search for their username below."
+
+msgid "Showcase Admins"
+msgstr "Application Admins"
+
+msgid "Are you sure you want to remove this user from the Showcase Admin list?"
+msgstr "Are you sure you want to remove this user from the Application Admin list?"
+
+msgid "There are currently no Showcase Admins."
+msgstr "There are currently no Application Admins."
+
+msgid ""
+" <p><strong>Showcase Admin:</strong> Can create and remove showcases. Can add"
+" and remove datasets from showcases.</p> "
+msgstr ""
+" <p><strong>Application Admin:</strong> Can create and remove applications. Can add"
+" and remove datasets from applications.</p> "
+
+msgid "showcase"
+msgid_plural "showcases"
+msgstr[0] "application"
+msgstr[1] "applications"
+
+msgid "Associate this showcase with this dataset"
+msgstr "Associate this application with this dataset"
+
+msgid "Add to showcase"
+msgstr "Add to application"
+
+msgid "Showcases featuring {dataset_name}"
+msgstr "Applications featuring {dataset_name}"
+
+msgid "There are no showcases that feature this dataset"
+msgstr "There are no applications that feature this dataset"
+
+msgid "Showcases - Add datasets"
+msgstr "Applications - Add datasets"
+
+msgid "Datasets available to add to this showcase"
+msgstr "Datasets available to add to this application"
+
+msgid "Add to Showcase"
+msgstr "Add to Application"
+
+msgid "Are you sure you want to delete showcase - {showcase_name}?"
+msgstr "Are you sure you want to delete application - {showcase_name}?"
+
+msgid "Create Showcase"
+msgstr "Create an Application"
+
+msgid "Edit showcase"
+msgstr "Edit application"
+
+msgid "View showcase"
+msgstr "View application"
+
+msgid "Showcases - Manage datasets"
+msgstr "Applications - Manage datasets"
+
+msgid "Datasets in this showcase"
+msgstr "Datasets in this application"
+
+msgid "Remove from Showcase"
+msgstr "Remove from Application"
+
+msgid "This showcase has no datasets associated to it"
+msgstr "This application has no datasets associated to it"
+
+msgid "Create a Showcase"
+msgstr "Create an Application"
+
+msgid "eg. my-showcase"
+msgstr "eg. my-application"
+
+msgid "Are you sure you want to delete this showcase?"
+msgstr "Are you sure you want to delete this application?"
+
+msgid "Update Showcase"
+msgstr "Update Application"
+
+msgid "Add Showcase"
+msgstr "Add Application"
+
+msgid "Search showcases..."
+msgstr "Search applications..."
+
+msgid "What are Showcases?"
+msgstr "What are Applications"
+
+msgid ""
+"Datasets have been used to build apps, websites and visualizations. They've "
+"been featured in articles, and written about in news reports and blog posts. "
+"Showcases collect together the best examples of datasets in use, to provide "
+"further insight, ideas, and inspiration."
+msgstr ""
+"Datasets have been used to build apps, websites and visualizations. They've "
+"been featured in articles, and written about in news reports and blog posts. "
+"Applications collect together the best examples of datasets in use, to provide "
+"further insight, ideas, and inspiration."
+
+msgid ""
+"Sysadmins can manage Showcase Admins from the <a href='%(url)s'>Showcase "
+"configuration page</a>."
+msgstr ""
+"Sysadmins can manage Application Admins from the <a href='%(url)s'>Application "
+"configuration page</a>."
+
+msgid "Datasets in Showcase"
+msgstr "Datasets in Application"
+
+msgid "There are no Datasets in this Showcase"
+msgstr "There are no Datasets in this Application"
+
+msgid "This showcase has no description"
+msgstr "This application has no description"
+
+msgid "Remove dataset from this showcase"
+msgstr "Remove dataset from this application"
+
+msgid "{number} showcase found for '{query}'"
+msgid_plural "{number} showcases found for '{query}'"
+msgstr[0] "{number} application found for '{query}'"
+msgstr[1] "{number} applications found for '{query}'"
+
+msgid "No showcases found for '{query}'"
+msgstr "No applications found for '{query}'"
+
+msgid "{number} showcase found"
+msgid_plural "{number} showcases found"
+msgstr[0] "{number} application found"
+msgstr[1] "{number} applications found"
+
+msgid "No showcases found"
+msgstr "No applications found"
