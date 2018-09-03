@@ -105,8 +105,7 @@
       "field_name": "owner_org",
       "label": "Organization",
       "required": true,
-      "preset": "dataset_organization",
-      "form_snippet": "organization_form_field.html"
+      "preset": "dataset_organization"
     },
     {
       "field_name": "contact_name",
