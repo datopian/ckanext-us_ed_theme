@@ -43,23 +43,28 @@
       "field_name": "modified",
       "label": "Last Update",
       "help_text": "Last updated date",
+      "required": true,
       "form_snippet": "date.html",
       "validators": "ignore_missing unicode isodate"
     },
     {
       "field_name": "publisher",
+      "required": true,
       "label": "Publisher"
     },
     {
       "field_name": "contactPoint",
+      "required": true,
       "label": "Contact Name"
     },
     {
       "field_name": "mbox",
+      "required": true,
       "label": "Contact Email"
     },
     {
       "field_name": "identifier",
+      "required": true,
       "label": "Unique Identifier"
     },
     {
@@ -87,16 +92,19 @@
     {
       "field_name": "url",
       "label": "URL",
+      "required": true,
       "preset": "resource_url_upload"
     },
     {
       "field_name": "name",
       "label": "Name",
+      "required": true,
       "form_placeholder": "eg. January 2011 Gold Prices"
     },
     {
       "field_name": "description",
       "label": "Description",
+      "required": true,
       "form_snippet": "markdown.html",
       "form_placeholder": "Some useful notes about the data"
     },
