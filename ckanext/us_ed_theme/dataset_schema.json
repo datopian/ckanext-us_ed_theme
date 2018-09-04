@@ -19,7 +19,7 @@
       "form_placeholder": "eg. my-dataset"
     },
     {
-      "field_name": "description",
+      "field_name": "notes",
       "label": "Description",
       "required": true,
       "form_snippet": "markdown.html",
@@ -86,6 +86,23 @@
           "label": "Non-public"
         }
       ]
+    },
+    {
+      "field_name": "maintainer",
+      "label": "Maintainer",
+      "form_placeholder": "Joe Bloggs",
+      "required": true,
+
+      "display_property": "dc:contributor"
+    },
+    {
+      "field_name": "maintainer_email",
+      "label": "Maintainer Email",
+      "form_placeholder": "joe@example.com",
+      "display_property": "dc:contributor",
+      "display_snippet": "email.html",
+      "required": true,
+      "display_email_name_field": "maintainer"
     }
   ],
   "resource_fields": [
