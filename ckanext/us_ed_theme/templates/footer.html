@@ -2,12 +2,12 @@
     <div class="container">
         {% block footer_content %}
         <div class="row">
-            <div class="col-md-3 footer-links">
+            <div class="col-md-2 footer-links">
                 <ul class="list-unstyled">
                     <li><a href="/"><img src="/base/images/footer-logo.png"></a></li>
                 </ul>
             </div>
-            <div class="col-md-3 footer-links">
+            <div class="col-md-4 footer-links">
                 {% block footer_nav %}
                 <ul class="list-unstyled">
                     {% block footer_links_ckan %} {% set api_url = 'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version) %}
