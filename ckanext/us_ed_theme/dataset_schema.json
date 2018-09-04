@@ -19,7 +19,7 @@
       "form_placeholder": "eg. my-dataset"
     },
     {
-      "field_name": "description",
+      "field_name": "notes",
       "label": "Description",
       "required": true,
       "form_snippet": "markdown.html",
