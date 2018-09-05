@@ -3,8 +3,11 @@ from ckan import model
 from ckan.plugins import toolkit
 from ckan.common import config
 import os
+import logging
 
 from datetime import datetime
+
+log = logging.getLogger()
 
 def _get_action(action, context_dict, data_dict):
     return toolkit.get_action(action)(context_dict, data_dict)
